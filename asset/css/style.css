@@ -1208,31 +1208,33 @@ i.red-tag {
     margin-bottom: 20px
 }
 
-.statistics img {
+.statistics img,
+.statistics i  {
     float: right;
     height: 45px;
     margin-left: 10px;
     position: relative;
-    top: 7px
+    top: 30px
 }
 
-.statistics label {
+.statistics label,
+.statistics span  {
     font-size: 18px;
     font-weight: 700;
-    color: #fff
+    color: #42b1a1
 }
 
 .statistics label span {
     display: block;
     font-weight: 400;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #000000;
     margin-top: 5px;
     text-align: center
 }
 
 .join {
     padding: 70px 0;
-    background: #3dae2b
+    background: #ffffff
 }
 
 .join h2 {
@@ -4174,7 +4176,8 @@ input[type=number] {
 }
 
 @media (max-width:1490px) {
-    .statistics img {
+    .statistics img,
+    .statistics i  {
         float: none;
         position: static;
         display: table;
@@ -5486,7 +5489,8 @@ input[type=number] {
         margin-bottom: 15px
     }
 
-    .statistics img {
+    .statistics img,
+    .statistics i {
         float: right;
         margin: 0 0 0 15px;
         width: 60px;
