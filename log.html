@@ -5,15 +5,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="هيئة تطوير منطقة عسير - هُنا ليُـتمِم كل ذي عزمٍ عزمــه،" />
-    <link rel="icon" type="image/x-icon" href="https://www.asda.gov.sa/wp-content/themes/aseer/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://www.asda.gov.sa/wp-content/themes/aseer/images/apple-touch-icon.webp" />
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://www.asda.gov.sa/wp-content/themes/aseer/images/favicon-32x32.webp" />
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://www.asda.gov.sa/wp-content/themes/aseer/images/favicon-16x16.webp" />
-    <title>هيئة تطوير منطقة عسير</title>
+    <link rel="icon" type="image/jpg" href="asset/images/iog2.jpg" />
+
+    <title> منصّة تَتِمّة - تسجيل الدخول</title>
 
     <!-- rtl -->
     <!-- Bootstrap CSS -->
@@ -68,7 +62,11 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-
+        body{
+            background: url(asset/images/a.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+        }
         .bg-2 {
             background-image: url(https://www.asda.gov.sa/wp-content/themes/aseer/images/back1.webp);
             /*transition: height 700ms ease 0s;*/
@@ -482,15 +480,15 @@ border-radius: 10px;    background-clip: padding-box;
 
 <body class="h-100 w-100 overflow-hidden" >
     <header class="header" on>
-        <nav class="navbar navbar-expand-xl" style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="display: flex; align-items: center;">
+        <nav class="navbar navbar-expand-xl" style="display: flex; justify-content: space-between; align-items: center; flex-direction:row-reverse">
+            <div style="display: flex; align-items: center; ">
                 <div style="flex: 1;"></div> <!-- هذا العنصر يستخدم لدفع الشعار إلى الوسط -->
                 <a class="navbar-brand" href="https://www.asda.gov.sa" style="margin-right: auto; margin-left: auto;"> <!-- هنا الشعار موجود في الوسط -->
                     <img src="asset/images/log.png" alt="logo" />
                 </a>
             </div>
             <form class="d-flex mt-3" role="search">
-                <a href="indax.html" class="btn text-light"><i class="fa-solid fa-chevron-left fa-2xl"></i></a>
+                <a href="indax.html" class="btn text-light"><i class="fa-solid fa-chevron-right fa-2xl"></i></a>
               </form>
         </nav>
 
@@ -560,55 +558,65 @@ border-radius: 10px;    background-clip: padding-box;
           <h1 style="color: #233C1B;" class="modal-title  fs-5" id="staticBackdropLabel" >تسجيل الدخول </h1>
         </div>
         <div class="modal-body">
-            <form>
-              <div class="mb-3">
+            <form class="needs-validation" novalidate action="log.html"> 
+                <div class="mb-3">
                 <label for="recipient-name" class="col-form-label" style="color: #233C1B;">الرقم الجامعي </label>
-                <input type="text" class="form-control rounded-pill" id="recipient-name" placeholder="أدخِل الرقم الجامعي">
+                <input type="text" class="form-control rounded-pill" id="recipient-name" placeholder="أدخِل الرقم الجامعي" required>
+                <div class="invalid-feedback mt-1">
+                    يرجى إدخال الرقم الجامعي
+                  </div>
               </div>
-              <div class="mb-3">
+              <div class="mb-5">
                 <label for="recipient-password" class="col-form-label" style="color: #233C1B;">كلمة المرور</label>
-                <input type="password" class="form-control rounded-pill" id="recipient-password" placeholder="أدخل كلمة المرور الخاصة بك">
+                <input type="password" class="form-control rounded-pill" id="recipient-password" placeholder="أدخل كلمة المرور الخاصة بك" required>
+                <div class="invalid-feedback mt-1">
+                    يرجى إدخال كلمة المرور
+                  </div>
               </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            
-          <button type="button" class="btn btn-success btn-lg btn-block rounded-pill" style="background-color: #233C1B ; border-color:#233C1B ;">دخول  <i class="fa-solid fa-lock pl-2"></i></button>
-          <a href="#" class="btn text-muted btn-link btn-lg btn-block" ><u>نسيت كلمة المرور؟</u></a>
+              <button type="submit" class="btn btn-success btn-lg btn-block rounded-pill" style="background-color: #233C1B ; border-color:#233C1B ;">دخول  <i class="fa-solid fa-lock pl-2"></i></button>
+              <a href="#" class="btn text-muted btn-link btn-lg btn-block" ><u>نسيت كلمة المرور؟</u></a>
 
+            </form>
         </div>
       </div>
     </div>
   </div>
     <!-- fullpage -->
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 style="color: #233C1B;" class="modal-title  fs-5" id="staticBackdropLabel" >تسجيل الدخول </h1>
         </div>
         <div class="modal-body">
-            <form>
-              <div class="mb-3">
+            <form class="needs-validation" novalidate action="log.html"> 
+                <div class="mb-3">
                 <label for="recipient-name" class="col-form-label" style="color: #233C1B;">الرقم الجامعي </label>
-                <input type="text" class="form-control rounded-pill" id="recipient-name" placeholder="أدخِل الرقم الجامعي">
+                <input type="text" class="form-control rounded-pill" id="recipient-name" placeholder="أدخِل الرقم الجامعي" required>
+                <div class="invalid-feedback mt-1">
+                    يرجى إدخال الرقم الجامعي
+                  </div>
               </div>
-              <div class="mb-3">
+              <div class="mb-5">
                 <label for="recipient-password" class="col-form-label" style="color: #233C1B;">كلمة المرور</label>
-                <input type="password" class="form-control rounded-pill" id="recipient-password" placeholder="أدخل كلمة المرور الخاصة بك">
+                <input type="password" class="form-control rounded-pill" id="recipient-password" placeholder="أدخل كلمة المرور الخاصة بك" required>
+                <div class="invalid-feedback mt-1">
+                    يرجى إدخال كلمة المرور
+                  </div>
               </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            
-          <button type="button" class="btn btn-success btn-lg btn-block rounded-pill" style="background-color: #233C1B ; border-color:#233C1B ;">دخول  <i class="fa-solid fa-lock pl-2"></i></button>
-          <a href="#" class="btn text-muted btn-link btn-lg btn-block" ><u>نسيت كلمة المرور؟</u></a>
+              <button type="submit" class="btn btn-success btn-lg btn-block rounded-pill" style="background-color: #233C1B ; border-color:#233C1B ;">دخول  <i class="fa-solid fa-lock pl-2"></i></button>
+              <a href="#" class="btn text-muted btn-link btn-lg btn-block" ><u>نسيت كلمة المرور؟</u></a>
 
+            </form>
         </div>
       </div>
     </div>
   </div>
+  <i class="overlay"></i>
+  <img class="back-mobile" src="asset/images/a.jpeg"
+      alt="background" />
+
     <!-- fullpage -->
     <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -621,6 +629,24 @@ border-radius: 10px;    background-clip: padding-box;
     <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/weather_api.js"></script>
     <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/fancybox.umd.js"></script>
     <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
         function toggle_audio() {
             var myVideo = document.getElementById("myVideo");
 
@@ -640,12 +666,6 @@ border-radius: 10px;    background-clip: padding-box;
         var element = document.getElementById("intro");
 
         var is_first = true;
-
-        jQuery(document).ready(function () {
-            var m =
-                '<a class="lang" href=" https://www.asda.gov.sa/en/">En </a>';
-            jQuery(".nav-lang").append(m);
-        });
 
         $(document).ready(function () {
             var direc = true;
