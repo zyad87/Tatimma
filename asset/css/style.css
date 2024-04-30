@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-2,614&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
 
 body,
 html {
@@ -8,7 +10,10 @@ html {
 
 body {
     font-family: "Cairo", sans-serif;
-    font-weight: 400
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
 a {
@@ -778,9 +783,9 @@ i.red-tag {
     background: #fff;
     position: relative;
     z-index: 9;
-    background: #fff url(images/bba.svg) no-repeat;
     background-position: 100% 93%;
-    background-size: 100%
+    background-size: 100%;
+
 }
 
 .about-us h2 {
@@ -1219,7 +1224,7 @@ i.red-tag {
 
 .statistics label,
 .statistics span  {
-    font-size: 18px;
+    font-size: 35px;
     font-weight: 700;
     color: #42b1a1
 }
@@ -1528,7 +1533,7 @@ footer .navbar-footer h2::after {
 }
 
 .header-page.header-1 {
-    min-height: 300px;
+    min-height: 470px;
     background:  url(/asset/images/Gul\ Boutique.png) no-repeat !important
 }
 

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/jpg" href="asset/images/iog2.jpg" />
 
+    <title> منصّة تَتِمّة &raquo;  من نحن &raquo; raghad</title>
     <!-- <link rel="manifest" href="images/site.webmanifest"> -->
-        <title> منصّة تَتِمّة    &raquo;  الخدمات</title>
     
     <!-- rtl -->
     <!-- Bootstrap CSS -->
@@ -134,11 +134,196 @@ h1.title{
 
 }
 /*===========================
+  about-01 css
+===========================*/
+.about-one {
+  background-color: var(--light-3);
+
+}
+.about-one .about-title {
+  margin-bottom: 20px;
+}
+.about-one .single-about-items {
+  margin-top: 30px;
+  padding: 35px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.about-one .single-about-items:hover {
+  box-shadow: var(--shadow-4);
+}
+.fp-viewing-section3 .header .navbar-brand img{
+    display: block;
+}
+.about-one .single-about-items .items-icon {
+  height: 70px;
+  line-height: 85px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--white);
+  color: #00d084;
+  box-shadow: var(--shadow-2);
+}
+.about-one .single-about-items .items-icon i {
+  font-size: 100px !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-one .single-about-items .items-icon {
+    max-width: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .about-one .single-about-items .items-icon {
+    max-width: 80px;
+  }
+}
+.about-one .single-about-items .items-content {
+  margin-top: 32px;
+  text-align: center !important;
+
+}
+@media only screen and (min-width: 1400px) {
+  .about-one .single-about-items .items-content {
+    padding-right: 45px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-one .single-about-items .items-content {
+    padding-right: 35px;
+  }
+}
+.about-one .single-about-items .items-content .items-title {
+  color: var(--black);
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center !important;
+
+}
+.about-one .single-about-items .items-content .text {
+  color: var(--dark-3);
+  text-align: center !important;
+}
+p.prgd{
+    font-weight: 300;
+    color: #009245;
+}
+/*===========================
+  Section Title One CSS
+===========================*/
+.section-title-one {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-one {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-one {
+    margin-bottom: 35px;
+  }
+}
+.section-title-one h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-one h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-one h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.fp-viewing-section3 .header {
+    background: #e7e7e7;
+}
+.fp-viewing-section3 .header .navbar{
+    border: none;
+}
+.about-us .about-img img{
+    animation: float 3s ease-in-out infinite;
+    border-radius:30% 70% 60% 40% / 30% 30% 70% 70%  !important;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.11);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.041);
+    transform: translatey(-10px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.137);
+    transform: translatey(0px);
+  }
+}
+/*===========================
+  card-01 css
+===========================*/
+.single-card {
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-card:hover {
+  box-shadow: var(--shadow-4);
+}
+.single-card .card-image img {
+  width: 100%;
+  height: 100%;
+}
+.single-card .card-content {
+  padding: 16px;
+}
+.single-card .card-content .card-title {
+  margin-bottom: 0;
+}
+.single-card .card-content .card-title a {
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-card .card-content .card-title a:hover {
+  color: var(--primary);
+}
+.single-card .card-content .text {
+  color: var(--dark-3);
+  margin-top: 8px;
+}
+/*===========================
   Features One CSS 
 ===========================*/
 .features-one {
   background-color: var(--light-2);
-  padding-top: 10px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .features-one .section-title {
@@ -252,7 +437,7 @@ a h4.features-title{
     
 <header class="header">
     <nav class="navbar navbar-expand-xl">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="indax.html">
             <img src="asset/images/log.png" alt="logo " />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -288,7 +473,7 @@ a h4.features-title{
                 </li>
                 <li itemscope="itemscope" itemtype="#" id="menu-item-390"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390 nav-item">
-                    <a  href="#" class="nav-link" style="border-bottom:1px solid #000; ">الخدمات</a>
+                    <a  href="Services.html" class="nav-link" >الخدمات</a>
                 </li>
                 <li itemscope="itemscope" itemtype="#" id="menu-item-177"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177 nav-item">
@@ -324,137 +509,117 @@ a h4.features-title{
     </nav>
 </header>
 
-<div class="header-page header-1 d-flex align-items-center margin-top">
-    
-    <div class="container-fluid">
-
-        <div class="section-title text-center">
-            <h1 class="title"><b>خدماتنا</b> </h1>
-            <p class="text">
-                أكثر من أداة وطرق مساعدة نقدمها ليرتقي بها المستخدم سماء الإحترافية والنجاح
-            </p>
-         </div>
-
-    </div>
-
-</div>
 
 
 <main>
 
-    <div class="container">
+    <div class="container-fluid ">
 
 <!--====== FEATURE ONE PART START ======-->
-<section class="features-area features-one">
-    <div class="container">
-       <div class="row justify-content-center">
-          <div class="col-lg-6">
+<section id="about">
+    <div class="about-us clearfix" id="about-us">
+        <div class="container-fluid ">
+            <h2 class="col-lg-6 col-md-12 pl-0 mb-0  ">  رغد محمد آل عامر </h2>
+            <p class="prgd">حيثما لحياتي من اسمي نصيب .. عيش كريم</p>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-12 order-lg-2">
+                    <div class="about-img">
+                        <img width="1920" height="1080"
+                        src="asset/images/rAbout.png"
+                            class="img-fluid wp-post-image rounded" alt="" decoding="async" loading="lazy" srcset="
+                            asset/images/rAbout.png         1920w,
+              asset/images/rAbout.png  300w,
+              asset/images/rAbout.png 1024w,
+              asset/images/rAbout.png   768w,
+              asset/images/rAbout.png 1536w
+            " sizes="(max-width: 1920px) 100vw, 1920px" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 order-lg-1 pr-lg-5">
+                    <p>
+                        طالبة سعودية في جامعة الملك خالد حاصلة على درجة البكالوريوس بمرتبة الشرف الثانية في تخصص نظم المعلومات الحاسوبية ، رائدة مجتمعية من أكاديمية الفوزان بجامعة الملك فهد للبترول والمعادن للمبادرات و القطاعات غير الربحية .. صاحبة فكرة " تتمة " وقائدة المشروع   
+                    </p>
+                    
+                </div>
+            </div>
 
-             <!-- row -->
+            <!--======  Start Section Title One ======-->
+<div class="section-title-one">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="text-center">
+                <div class="content">
+                   <h2 class="fw-bold">الدور المهني في مشروع تتمة</h2>
+                </div>
+             </div>
           </div>
        </div>
        <!-- row -->
+    </div>
+    <!-- container -->
+ </div>
+ <!--====== ABOUT TWO PART ENDS ======-->
+            <!--====== CARD PART START ======-->
+<section class="card-area pb-5">
+    <div class="container">
        <div class="row justify-content-center">
           <div class="col-lg-4 col-md-7 col-sm-9">
-             <div class="features-style-one text-center">
-                <div class="features-icon">
-                    <i class="fa-solid fa-people-line"></i>
-                </div>
-                <div class="features-content">
-                   <h4 class="features-title">مجتمع خالــِــد</h4>
-                   <p class="text">
-                    التخليد الأثر المخرج من هذه الجامعة العريقة والانتفاع بجميع طلابها وطالباتها انضم إلى مجتمعنا الحيوي حيث يمكنك التفاعل وتبادل الخبرات مع زملائك الخريجين والمتخصصين في مجالك
-                   </p>
- 
+             <div class="single-card card-style-one">
+                <div class="card-image">
+                   <img src="https://cdn.ayroui.com/1.0/images/card/card-1.jpg" alt="Image" />
                 </div>
              </div>
-             <!-- single features -->
+             <!-- single-card -->
           </div>
+          <!-- col -->
           <div class="col-lg-4 col-md-7 col-sm-9">
-             <div class="features-style-one text-center pl-2 pr-2" style="border-left: 2px solid #009245; border-right: 2px solid #00d084;" >
-                <div class="features-icon">
-                    <i class="fa-brands fa-connectdevelop"></i>
-                </div>
-                <div class="features-content">
-                   <h4 class="features-title">الأدوات الذكية </h4>
-                   <p class="text">
-                    اكتسب مهارات المقابلات الوظيفية وتطوير السيرة الذاتية بثقة مع وكيلنا الذكي الذي يوفر تدريبا شخصيا وتوجيها للنجاح في العالم المهني
-                   </p>
- 
+             <div class="single-card card-style-one">
+                <div class="card-image">
+                   <img src="https://cdn.ayroui.com/1.0/images/card/card-2.jpg" alt="Image" />
                 </div>
              </div>
-             <!-- single features -->
+             <!-- single-card -->
           </div>
-          <div class="col-lg-4 col-md-7 col-sm-9" >
-             <div class="features-style-one text-center">
-                <div class="features-icon">
-                    <i class="fa-solid fa-laptop-file"></i>
-                </div>
-                <div class="features-content">
-                   <h4 class="features-title">مصادر التعلم</h4>
-                   <p class="text">
-                    احصل على المعرفة التي تحتاجها للنجاح في مجالك من خلال مجموعتنا المتنوعة من الكورسات التعليمية والموارد التعليمية الموثوقة
-                   </p>
- 
-                </div>
-             </div>
-             <!-- single features -->
-             
-          </div>
+          <!-- col -->
           <div class="col-lg-4 col-md-7 col-sm-9">
-            <div class="features-style-one text-center">
-               <div class="features-icon">
-                <i class="fa-solid fa-bullhorn"></i>
-               </div>
-               <div class="features-content">
-                  <h4 class="features-title">إعلانات</h4>
-                  <p class="text">
-                    اكتشف فرص العمل المثالية التي تناسب مهاراتك واهتماماتك، وقدم سيرتك الذاتية بثقة بعد تطويرها وتحسينها بمساعدة خبراءنا ومواردنا التعليمية المتنوعة
-                  </p>
- 
-               </div>
-            </div>
-            <!-- single features -->
-         </div>
-         <div class="col-lg-4 col-md-7 col-sm-9">
-            <div class="features-style-one text-center pl-2 pr-2" style="border-left: 2px solid #009245; border-right: 2px solid #009245;" >
-                <div class="features-icon">
-                    <i class="fa-solid fa-list-check"></i>
-               </div>
-               <div class="features-content">
-                  <h4 class="features-title">تقييم المستوى</h4>
-                  <p class="text">
-                    استفد من تقييم شخصي دقيق يحدد نقاط قوتك والمجالات التي تحتاج إلى تطوير احصل على توجيه مخصص وخطة عمل شخصية لتحقيق أهدافك المهنية. بثقة وفعالية
-                  </p>
- 
-               </div>
-            </div>
-            <!-- single features -->
-            
-         </div>
-         <div class="col-lg-4 col-md-7 col-sm-9">
-            <div class="features-style-one text-center">
-               <div class="features-icon">
-                <i class="fa-solid fa-bullseye"></i>
-                
-               </div>
-               <div class="features-content">
-                  <a href="#"><h4 class="features-title">رواد النجاح</h4></a>
-                  <p class="text">
-                    انضم إلى جلساتنا مع رواد النجاح واستمع إلى قصصهم الملهمة والملهمة، اكتشف كيف تغلبوا على التحديات وتحققوا أحلامهم، واستلهم من تجاربهم لتحقيق نجاحك الشخصي والمهني
-                  </p>
- 
-               </div>
-            </div>
-            <!-- single features -->
-            
-         </div>
-         
+             <div class="single-card card-style-one">
+                <div class="card-image">
+                   <img src="https://cdn.ayroui.com/1.0/images/card/card-3.jpg" alt="Image" />
+                </div>
+             </div>
+             <!-- single-card -->
+          </div>
+          <!-- col -->
        </div>
        <!-- row -->
     </div>
     <!-- container -->
  </section>
+
+ <!--====== ABOUT ONE PART START ======-->
+<section class="about-area about-one">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="about-title text-center">
+                <h2 class="title fw-bold">الانجازات العملية للمنصة</h2>
+             </div>
+          </div>
+       </div>
+       <!-- row -->
+       <div style="font-size: 68px; color: #416e40; text-align: center;"><i class="fa-solid fa-ranking-star"></i></div>
+       <h1  style="text-align: center;">مركزي الأول</h1>
+       <p style="text-align: center ; color: #416e40;">المركز الأول على مستوى الكلية في عرض مشاريع التخرج لأفضل فكرة وأفضل موقع</p>
+       <!-- row -->
+    </div>
+    <!-- container -->
+ </section>
+ <!--====== ABOUT ONE PART ENDS ======-->
+ <!--====== CARD PART ENDS ======-->
+        </div>
+    </div>
+</section>
  <!--====== FEATURE ONE PART ENDS ======-->
     </div>	
 </main>
