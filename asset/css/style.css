@@ -1534,7 +1534,7 @@ footer .navbar-footer h2::after {
 
 .header-page.header-1 {
     min-height: 470px;
-    background:  url(asset/images/Boutique.png) no-repeat !important
+    background:  url(/asset/images/Boutique.png) no-repeat !important
 }
 
 
