@@ -229,11 +229,48 @@
             margin-bottom: 15px;
             position: relative;
         }
-
-        .section-strategy-home .top-home img {
-            width: 100%;
-        }
-
+        .custom-item {
+        width: 250px;
+        height: 350px;
+        position: relative;
+        margin: 20px;
+        cursor: pointer;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .custom-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .custom-item h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        margin: 0;
+        transition: opacity 0.3s;
+    }
+    .custom-item:hover {
+        transform: scale(1.05); /* تكبير الكارت عند التحويم بالماوس */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* إضافة ظل عند التحويم بالماوس */
+    }
+    .custom-item:hover h2 {
+        opacity: 0; /* إخفاء النص عند التحويم بالماوس */
+    }
+    .custom-item:hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* تغيير لون الخلفية عند التحويم بالماوس */
+        border-radius: 20px;
+    }
         .section-strategy-home .title-strategy {
             font-size: 40px;
             font-weight: 600;
@@ -570,74 +607,26 @@
                 <a class="scroll" href="#section3">استكشف</a>
             </div>
         </div>
+
+
         <div class="section">
             <div class="intro sub-intro next-intro" id="next-intro">
                 <div class="nav-intro clearfix" id="next-card">
-                    <h2 class="text-center min-title">
-                        هُنا ليُـتمِم كل ذي عزمٍ عزمــه
-                    </h2>
-
+                    <h2 class="text-center min-title">هُنا ليُـتمِم كل ذي عزمٍ عزمــه</h2>
                     <div class="container">
-                        <div class="slider-next-card justify-content-center owl-carousel">
-                            <div class="item">
-                                <div class="flip-box">
-                                    <div class="flip-box-inner">
-                                        <div class="flip-box-front" style="
-                          background: url(asset/images/1.jpeg)
-                            no-repeat;
-                        ">
-                                            <h2>وظائف</h2>
-                                        </div>
-                                        <div class="flip-box-back">
-
-                                            <p class="mt-5" style="font-size: 20px;">
-                                                فرص العمل المميزة في القطاعين الحكومي والخاص لبناء مسيرة مهنيّة وثيقة
-
-                                            </p>
-                                        </div>
-                                    </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="custom-item" onclick="window.location.href='page2.html'">
+                                    <img src="asset/images/tw-1.png" alt="تدريب صيفي">
+                                    <h2>تدريب صيفي</h2>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="flip-box flip-box2">
-                                    <div class="flip-box-inner">
-                                        <div class="flip-box-front" style="
-                          background: url(asset/images/2.jpeg)
-                            no-repeat;
-                        ">
-                                            <h2>تدريب صيفي 
-                                            </h2>
-                                        </div>
-                                        <div class="flip-box-back">
-
-
-                                            <p class="mt-5" style="font-size: 20px;">
-                                                برامج التدريب التعاوني في منطقة عسير وخارجها لتمكين الخرّيجين وتحويل معرفتهم إلى خبرة ومهارة قيّمة
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="flip-box flip-box3">
-                                    <div class="flip-box-inner">
-                                        <div class="flip-box-front" style="
-                          background: url(asset/images/3.jpeg)
-                            no-repeat;
-                        ">
-                                            <h2>تدريب تعاوني</h2>
-                                        </div>
-                                        <div class="flip-box-back">
-
-                                            <p class="mt-5" style="font-size: 20px;">
-                                                الفُرص المتاحة والمميزة للطلاب الحاليين لاكتساب المعرفة وتعزيز انطلاقتهم مستقبلًا ورفع الاستفادة العلمية والتطبيقية                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- انسخ الكود السابق وقم بتكراره للعناصر الأخرى -->
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
                 <a class="scroll" href="#section3">استكشف</a>
             </div>
         </div>
