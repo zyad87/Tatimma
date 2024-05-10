@@ -102,7 +102,10 @@
         .fp-viewing-section4 .header .navbar-nav .nav-link {
             color: #1d1d1b;
         }
-
+        .team-image img {
+    height: 300px; /* يمكن تغيير القيمة حسب الاحتياج */
+    border-radius: 30px;
+}
         .fp-viewing-section3 .header .search img {
             filter: none;
         }
@@ -147,7 +150,82 @@
             background: #fff;
             height: max-content;
         }
-
+/*===========================
+  teams css 
+===========================*/
+.team-style-one {
+  position: relative;
+  margin-top: 30px;
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one:hover {
+  box-shadow: var(--shadow-4);
+}
+.team-style-one .team-image img {
+  width: 100%;
+}
+.team-style-one .team-content {
+  padding: 20px 15px;
+  width: 100%;
+  background-color: var(--white);
+}
+.team-style-one .team-content .name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-one .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-one .team-content .sub-title {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 2px;
+  display: block;
+}
+.team-style-one .team-content .social {
+  margin-top: 12px;
+}
+.team-style-one .team-content .social li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.team-style-one .team-content .social li a {
+  font-size: 16px;
+  color: var(--gray-1);
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid var(--gray-4);
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one .team-content .social li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
         .fp-viewing-section4 .header .lang,
         .fp-viewing-section4 .header .navbar-nav .nav-link {
             color: #1d1d1b;
@@ -389,6 +467,40 @@
                 max-width: 60%;
             }
         }
+        .single-team .team-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* تأكد من أن الكرت يمتلك ارتفاعًا ليسمح بالتوسيط */
+}
+
+.single-team .team-image {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* لمنع أي جزء من التأثيرات من التجاوز خارج الكرت */
+    transition: transform 0.3s ease-in-out; /* تأثير التحول عند تغيير ارتفاع الكرت */
+}
+
+.single-team:hover .team-image {
+    transform: scale(1.1); /* زيادة الارتفاع بنسبة 10% عند تحويل المؤشر فوق الكرت */
+}
+
+.single-team .team-image span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* يمكنك ضبط التباعد بحسب الحاجة */
+    color: white; /* لون النص الافتراضي */
+    font-size: 52px; /* حجم الخط، يمكنك ضبط القيمة حسب الحاجة */
+    transition: color 0.3s; /* تأثير التحول عند تغيير لون النص */
+}
+
+.single-team .team-image:hover span {
+    color: #ffa400; /* تغيير لون النص عند تحويل المؤشر فوق الكرت */
+}
+
 
         @media (max-width: 768px) {
 
@@ -608,28 +720,66 @@
             </div>
         </div>
 
-
         <div class="section">
             <div class="intro sub-intro next-intro" id="next-intro">
                 <div class="nav-intro clearfix" id="next-card">
                     <h2 class="text-center min-title">هُنا ليُـتمِم كل ذي عزمٍ عزمــه</h2>
                     <div class="container">
                         <div class="row">
-                            <div class="col-3">
-                                <div class="custom-item" onclick="window.location.href='page2.html'">
-                                    <img src="asset/images/tw-1.png" alt="تدريب صيفي">
-                                    <h2>تدريب صيفي</h2>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-team text-center team-style-one">
+                                    <div class="team-image">
+                                        <img class="img-fluid" src="/asset/images/tw-1.png" alt="T" />
+                                        <div class="team-title">
+                                            <span>توظيف</span>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- single team -->
                             </div>
-                            <!-- انسخ الكود السابق وقم بتكراره للعناصر الأخرى -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-team text-center team-style-one">
+                                    <div class="team-image">
+                                        <img class="img-fluid" src="/asset/images/tw-2.png" alt="T" />
+                                        <div class="team-title">
+                                            <span>تطوع</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single team -->
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-team text-center team-style-one">
+                                    <div class="team-image">
+                                        <img class="img-fluid" src="/asset/images/tw-3.png" alt="T" />
+                                        <div class="team-title">
+                                            <span>تعلم</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single team -->
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-team text-center team-style-one">
+                                    <div class="team-image">
+                                        <img class="img-fluid" src="/asset/images/tw-4.png" alt="T" />
+                                        <div class="team-title">
+                                            <span>تواصل</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single team -->
+                            </div>
                         </div>
+                        <!-- row -->
                     </div>
                 </div>
             </div>
         </div>
-                <a class="scroll" href="#section3">استكشف</a>
-            </div>
-        </div>
+        <a class="scroll" href="#section3">استكشف</a>
+        
+        
+        
 
 
 
