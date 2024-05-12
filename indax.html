@@ -555,6 +555,30 @@
                 font-size: 14px;
             }
         }
+        .custom-counter span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.custom-counter label {
+    font-size: 16px;
+}
+
+.counted-custom span {
+    animation: count-custom 1.5s ease-out;
+}
+
+@keyframes count-custom {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
     </style>
 </head>
 
@@ -823,21 +847,24 @@
                     <div class="row statistics " style="flex-wrap:nowrap; align-items:center ">
  
 
-                        <div class="col-sm-3 d-flex flex-column align-items-center">
+                        <div class="custom-counter col-sm-3 d-flex flex-column align-items-center">
                             <i class="fa-solid fa-school fa-2xl mb-3" style="color:#3B5249;"></i>
                             <span>02</span>
                             <label> جامعة حكومية </label>
                         </div>
-                        <div class="col-sm-3 d-flex flex-column align-items-center">
+                        <div class="custom-counter col-sm-3 d-flex flex-column align-items-center">
                             <i class="fa-solid fa-landmark fa-2xl mb-3" style="color: #3B5249;"></i>
                             <span>20 +</span>
                             <label> كلية معتمدة</label>
                         </div>
-                        <div class="col-sm-3 d-flex flex-column align-items-center">
+                        <div class="custom-counter col-sm-3 d-flex flex-column align-items-center">
                             <i class="fa-solid fa-graduation-cap fa-2xl mb-3" style="color: #3B5249;"></i>
                             <span>55,627 +</span>
                             <label>طالب و طالبة</label>
                         </div>
+                        
+                        
+                        
                         <div class="col-3 ml-1">
                             <img src="asset/images/ssd.jpeg" alt="عدد السكان" style="height: 100%; ">
 
@@ -1376,6 +1403,22 @@
   var audio = document.getElementById("myAudio");
   audio.play();
 },3000)
+
+
+document.addEventListener("scroll", function() {
+    var customCounters = document.querySelectorAll('.custom-counter');
+    var windowHeight = window.innerHeight;
+    customCounters.forEach(counter => {
+        var counterPosition = counter.getBoundingClientRect().top;
+        if (counterPosition < windowHeight * 0.75) {
+            counter.classList.add('counted-custom');
+        } else {
+            counter.classList.remove('counted-custom');
+        }
+    });
+});
+
+
 
     </script>
 </body>

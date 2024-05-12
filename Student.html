@@ -1,0 +1,849 @@
+
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/jpg" href="asset/images/iog2.jpg" />
+
+    <title> منصّة تَتِمّة &raquo;   الطالب</title>
+    <!-- <link rel="manifest" href="images/site.webmanifest"> -->    
+    <!-- rtl -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="asset/css/all.min.css" />
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="asset/css/animate.min.css" />
+    <link rel="stylesheet" href="asset/css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="/asset/css/fancybox.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<meta name='robots' content='max-image-preview:large' />
+<style>
+    .header .navbar-nav .nav-link, .header .lang{
+        color: #1D1D1B !important;
+    }
+    /* ===== Buttons Css ===== */
+.features-style-one .primary-btn-outline {
+  border-color: #009245;
+  color: #009245;
+}
+.header-page.header-1 {
+    min-height: 200px;
+    background:  transparent !important
+}
+.container-fluid h2{
+    font-weight: 900;
+}
+.card{
+background-color: #fff;
+   transition: all 1s ease-in-out ;
+   border-radius: 20px;
+}
+.card img{
+    border-radius: 20px;
+
+}
+button {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 200px !important;
+  background: rgb(46,97,68) ;
+background: linear-gradient(270deg, rgba(46,97,68,1) 31%, rgba(2,4,3,1) 94%) !important;
+color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+p.pSome::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: -55px;
+    width: 712px;
+    height: 2px;
+    background-color: #e8e8e8;
+}
+
+
+button:hover {
+    background: rgb(46,97,68) !important;
+
+}
+
+button > i {
+  width: 34px;
+  color: #ffffff !important;
+  margin-right: 10px !important;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover i {
+  transform: translateX(5px);
+  color: #ffffff !important;
+
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,205px);
+    right: auto;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+
+.single-card {
+  box-shadow: #ffffff;
+  background: rgba(255, 255, 255, 0.573);
+backdrop-filter: blur( 9px );
+-webkit-backdrop-filter: blur( 9px );
+border-radius: 10px;  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-card:hover {
+  box-shadow: #000;
+}
+.single-card .card-image img {
+  width: 100%;
+  height: 100%;
+}
+.single-card .card-content {
+  padding: 16px;
+}
+.single-card .card-content .card-title {
+  margin-bottom: 0;
+}
+.single-card .card-content .card-title a {
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-card .card-content .card-title a:hover {
+  color: var(--primary);
+}
+.single-card .card-content .text {
+  color: var(--dark-3);
+  margin-top: 8px;
+}
+
+.card-area img {
+  max-width: 250px; /* يمكنك تعديل القيمة هنا حسب الحجم الذي تريده */
+  display: block;
+  margin: 0 auto;
+}
+===========================
+  about-01 css
+===========================*/
+.about-one {
+  background-color: var(--light-3);
+
+}
+.about-one .about-title {
+  margin-bottom: 20px;
+}
+.about-one .single-about-items {
+  margin-top: 30px;
+  padding: 35px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.about-one .single-about-items:hover {
+  box-shadow: var(--shadow-4);
+}
+.fp-viewing-section3 .header .navbar-brand img{
+    display: block;
+}
+.about-one .single-about-items .items-icon {
+  height: 70px;
+  line-height: 85px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--white);
+  color: #00d084;
+  box-shadow: var(--shadow-2);
+}
+.about-one .single-about-items .items-icon i {
+  font-size: 100px !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-one .single-about-items .items-icon {
+    max-width: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .about-one .single-about-items .items-icon {
+    max-width: 80px;
+  }
+}
+.about-one .single-about-items .items-content {
+  margin-top: 32px;
+  text-align: center !important;
+
+}
+@media only screen and (min-width: 1400px) {
+  .about-one .single-about-items .items-content {
+    padding-right: 45px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-one .single-about-items .items-content {
+    padding-right: 35px;
+  }
+}
+.about-one .single-about-items .items-content .items-title {
+  color: var(--black);
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center !important;
+
+}
+.about-one .single-about-items .items-content .text {
+  color: var(--dark-3);
+  text-align: center !important;
+}
+p.prgd{
+    font-weight: 300;
+    color: #009245;
+}
+</style>
+
+</head>
+<body class="fp-viewing-section3">
+    
+<header class="header">
+    <nav class="navbar navbar-expand-xl">
+        <a class="navbar-brand" href="indax.html">
+            <img src="asset/images/log.png" alt="logo " />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="menu-header" class="navbar-nav ">
+                <li itemscope="itemscope" itemtype="#"
+                    id="menu-item-2071"
+                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active menu-item-2071 nav-item">
+                    <a title="الرئيسية" href="indax.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li itemscope="itemscope" itemtype="#" id="menu-item-169"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-169 nav-item">
+                    <a  href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        class="dropdown-toggle nav-link" id="menu-item-dropdown-169">المركز الإعلامي</a>
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-169" role="menu">
+                        <li itemscope="itemscope" itemtype="#"
+                            id="menu-item-163"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163 nav-item" style="border-bottom:1px solid #fff; ">
+                            <a  href="https://www.kku.edu.sa/ar/news" class="dropdown-item">عن
+                            الأخبار</a>
+                        </li>
+                        <li itemscope="itemscope" itemtype="#"
+                            id="menu-item-236"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236 nav-item">
+                            <a  href="https://www.kku.edu.sa/ar"
+                            class="dropdown-item"> موقع الجامعة </a>
+                        </li>
+                    </ul>
+                </li>
+                <li itemscope="itemscope" itemtype="#" id="menu-item-390"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390 nav-item">
+                    <a  href="Services.html" class="nav-link">الخدمات</a>
+                </li>
+                <li itemscope="itemscope" itemtype="#" id="menu-item-177"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177 nav-item">
+                    <a  href="About.html" class="nav-link" >من نحن</a>
+                </li>
+                <li itemscope="itemscope" itemtype="#" id="menu-item-169"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-169 nav-item">
+                <a  href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    class="dropdown-toggle nav-link" id="menu-item-dropdown-169">التواصل والدعم </a>
+                <ul class="dropdown-menu p-1" aria-labelledby="menu-item-dropdown-169" role="menu">
+                    <li itemscope="itemscope" itemtype="#"
+                        id="menu-item-163"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163 nav-item">
+                        <p style="font-size: 15px;">  TatiSupport@gmail.com <i class="fa-solid fa-envelope "></i> </p>
+                    </li>
+                    <li itemscope="itemscope" itemtype="#"
+                        id="menu-item-236"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236 nav-item">
+                        <p style="font-size: 15px; text-align: center;">   9665092876+ <i class="fa-solid fa-phone"></i> </p>
+
+                    </li>
+                    
+                </ul>
+            </li>
+            <li itemscope="itemscope" itemtype="#" id="menu-item-177"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177 nav-item">
+            <a  href="About.html" class="nav-link" style="border-bottom:1px solid #000; "> الدخول</a>
+        </li>
+                <div class=" my-5 my-lg-0 pt-2" style="margin-right: 600px;">
+
+                اهلا نورة عسيري...
+                <a class="lang ml-0 music-btn" href="log.html" ><img src="asset/images/uesr.png" alt="" srcset="" style="width: 30px;"></a>
+                <div class="nav-lang ml-3"></div>
+
+                </div>
+                
+
+        </div>
+    </nav>
+</header>
+
+<div class="header-page header-1 d-flex align-items-center margin-top">
+    
+
+
+</div>
+
+
+<main>
+
+<!--====== FEATURE ONE PART START ======-->
+<!--====== CARD PART START ======-->
+<section class="card-area pb-5">
+    <div class="container-fluid ">
+        <h2 class="col-lg-6 col-md-12 pl-0 mb-0  ">   إبني الخريج .. إبنتي الخريجة </h2>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-12 order-lg-2">
+                <div class="about-img">
+                    <img width="1920" height="1080"
+                    src="asset/images/studimg1.jpeg"
+                        class="img-fluid wp-post-image rounded pb-3" alt="" decoding="async" loading="lazy" srcset="
+                        asset/images/studimg1.jpeg"         1920w,
+          asset/images/studimg1.jpeg  300w,
+          asset/images/studimg1.jpeg 1024w,
+          asset/images/studimg1.jpeg   768w,
+          asset/images/studimg1.jpeg 1536w
+        " sizes="(max-width: 1920px) 100vw, 1920px" />
+                </div>            </div>
+            <div class="col-lg-6 col-md-12 order-lg-1 pr-lg-5">
+                <p>تأكدوا أن جامعتكم العالمية فخورة بتخريج قوى عاملة مثلكم وعقول مبدعة بها نبتهج ونفخر وأننا جميعًا تحت ظل رعايتكم دائما ومحط رغبتنا الأولى تكمن في تطويركم أكثر والتواصل. معكم باستمرار لنرى أبرز إنجازاتكم المهنية والشخصية وبها نسعد ولنحقق معا رسالة هذه المنطقة #الحلم_تم_يا خالد أتموا تعلمكم وإصراركم عبر منصة تتمة بكل ما استطعتم ...</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <h2 class="col-lg-6 col-md-12 pl-0 mb-0  "> فخر جامعة الملك خالد </h2>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-12 order-lg-2">
+                <div class="about-img">
+                    <img width="1920" height="1080"
+                    src="asset/images/studimg2.jpeg"
+                        class="img-fluid wp-post-image rounded pb-3" alt="" decoding="async" loading="lazy" srcset="
+                        asset/images/studimg2.jpeg"         1920w,
+          asset/images/studimg2.jpeg  300w,
+          asset/images/studimg2.jpeg 1024w,
+          asset/images/studimg2.jpeg   768w,
+          asset/images/studimg2.jpeg 1536w
+        " sizes="(max-width: 1920px) 100vw, 1920px" />
+                </div>            </div>
+            <div class="col-lg-6 col-md-12 order-lg-1 pr-lg-5">
+                <p>من طلاب وطالبات .. لا شك لديّ أننا كل عام نولد للعالم عقول ذكية ومنتجة لديها الكثير من الإبداع والعطاء حاملين مسمى خريج وخريجة" آمالنا العظيمة فيكم ما زالت مستمرة وغير منتهية لنرى أكبر معالم إنجازاتكم عبر بوابة تتمة التي تربطنا بكم دعما لكم وتطويرا في رحلتكم الجديدة</p>
+                
+            </div>
+        </div>
+    </div>
+
+          <!-- container -->
+       </section>
+
+<!--====== ABOUT ONE PART START ======-->
+
+   <!-- row -->
+</div>
+<!-- container -->
+</section>
+<!--====== ABOUT ONE PART ENDS ======-->
+<!--====== CARD PART ENDS ======-->
+    </div>
+    <div class="container">
+
+       <div class="row justify-content-center pt-5 ">
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="single-card card-style-one border border-secondary">
+
+                <div class="card-content ">
+                   <h4 class="card-title p-3 text-center">
+                      <a href="javascript:void(0)">  السجل الأكاديمي للطالب</a>
+                   </h4>
+
+                </div>
+             </div>
+             <!-- single-card -->
+          </div>
+          <!-- col -->
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="single-card card-style-one border border-secondary">
+
+                <div class="card-content">
+                   <h4 class="card-title p-3 text-center">
+                      <a href="javascript:void(0)">مشاركات الطالب الجامعية</a>
+                   </h4>
+
+                </div>
+             </div>
+             <!-- single-card -->
+          </div>
+          <!-- col -->
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="single-card card-style-one border border-secondary">
+
+                <div class="card-content">
+                   <h4 class="card-title p-3 text-center">
+                    <a href="javascript:void(0)">نتئج مقابلاتي الإفتراضية</a>
+                   </h4>
+
+                </div>
+             </div>
+             <!-- single-card -->
+          </div>
+          <!-- col -->
+       </div>
+       <div class="row justify-content-center pt-5 pb-5">
+        <div class="col-lg-4 col-md-7 col-sm-9">
+           <div class="single-card card-style-one border border-secondary">
+
+              <div class="card-content ">
+                 <h4 class="card-title p-3 text-center">
+                    <a href="javascript:void(0)"> التوصيات الجامعية</a>
+
+                 </h4>
+
+              </div>
+           </div>
+           <!-- single-card -->
+        </div>
+        <!-- col -->
+        <div class="col-lg-4 col-md-7 col-sm-9">
+           <div class="single-card card-style-one border border-secondary">
+
+              <div class="card-content">
+                 <h4 class="card-title p-3 text-center">
+                    <a href="javascript:void(0)">التوصيات الذكية</a>
+                 </h4>
+
+              </div>
+           </div>
+           <!-- single-card -->
+        </div>
+        <!-- col -->
+        <div class="col-lg-4 col-md-7 col-sm-9">
+           <div class="single-card card-style-one border border-secondary">
+
+              <div class="card-content">
+                 <h4 class="card-title p-3 text-center">
+                    <a href="javascript:void(0)">سجل التقديمات</a>
+                 </h4>
+
+              </div>
+           </div>
+           <!-- single-card -->
+        </div>
+        <!-- col -->
+     </div>
+       <!-- row -->
+    </div>
+    <!-- container -->
+ </section>
+ <!--====== CARD PART ENDS ======-->
+ <!--====== FEATURE ONE PART ENDS ======-->
+</main>
+
+
+<footer class="footer">
+
+    <div class="container-fluid position-relative">
+
+
+        <div class="row pl-4" >
+
+
+
+            <div class="col-xl-6 col-lg-6 col-md-10 order-xl-1 order-lg-2">
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="navbar-footer ">
+                            <h2> منصّة تَتِمّة  </h2>
+                            <div class="menu-footer-menu-1-container "><ul id="menu-footer-menu-1" class="list-unstyled ">
+                                <li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-313"><a href="#section2">عن المنصه</a></li>
+<li id="menu-item-391" class="font-weight-bold menu-item menu-item-type-post_type menu-item-object-page menu-item-391"><a href="#">المبادرات</a></li>
+<li id="menu-item-3413" class="font-weight-bold menu-item menu-item-type-custom menu-item-object-custom menu-item-3413"><a href="policy.html">سياسة الخصوصية</a></li>
+</ul></div>			                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="navbar-footer ">
+                            <h2>المركز الإعلامي</h2>
+                            <div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="list-unstyled"><li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="https://www.kku.edu.sa/ar/news">الأخبار</a></li>
+
+<li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="#">الهوية البصرية</a></li>
+</ul></div>			                        </div>
+                    </div>
+                </div>                
+            </div>
+
+        </div>
+        <div class="other-links pl-4">
+            <h3>روابط قد تهمك</h3>
+            <div style="display: flex; align-items: center; justify-content:space-between">
+                <a target="_blank" href="https://www.kku.edu.sa/"><img src="https://www.kku.edu.sa/sites/default/files/KKUNEWLogo.png"></a>
+                <a class="soudah" target="_blank" href="https://moe.gov.sa/ar/pages/default.aspx"><img src="https://moe.gov.sa/_layouts/15/Portal/Images/Logo.svg"></a>
+                <a class="soudah" target="_blank" href="https://hrsd.gov.sa/"><img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/hrsd.webp"></a>
+                <a target="_blank" href="https://www.ub.edu.sa/"><img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/ub.webp"></a>
+                <a target="_blank" href="https://monshaat.gov.sa/" ><img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/mon.webp"></a>
+                <div class="links-social ml-3 ">
+                <ul class="list-unstyled mb-0 mr-5">
+                    <li class="mb-3 list-inline-item"><a href="https://twitter.com/tatimmakku?s=11&t=jT8Xjt3KbbtHjdTDIYbauA" target="_blank"><i class="fa-brands fa-x-twitter" style="padding: 10px;"></i></a></li>
+                    <li class="mb-3 list-inline-item"><a href="#" target="_blank"><i class="fa-brands fa-instagram" style="padding: 10px;"></i></a></li>
+                    <li class="mb-3 list-inline-item"><a href="#" target="_blank"><i class="fab fa-linkedin-in" style="padding: 10px;"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa-brands fa-facebook" style="padding: 10px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة     2024</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/jquery.min.js"></script>
+    <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/popper.min.js"></script>
+    <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/bootstrap.min.js"></script>
+    <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/owl.carousel.min.js"></script>
+    <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/wow.min.js"></script>
+    <script src="https://www.asda.gov.sa/wp-content/themes/aseer/js/fancybox.umd.js"></script>
+
+<script> new WOW().init(); </script>
+
+<script>
+
+
+
+    $(document).ready(function(){
+                    var direc = true;
+        
+        $('#myTab_projects').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            touchDrag: false,
+            mouseDrag: false,
+            rtl:direc,
+            navText:['<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-l.svg">','<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-r.svg">'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    touchDrag: true,
+                },
+                375: {
+                    items: 1
+                },
+                500: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                880: {
+                    items: 2
+                },
+                999: {
+                    items: 3
+                }
+            }
+        });
+
+        $('#myint').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            touchDrag: false,
+            mouseDrag: false,
+            rtl:direc,
+            navText:['<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-l.gif">','<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-r.gif">'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    touchDrag: true,
+                },
+                500: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                880: {
+                    items: 2
+                },
+                999: {
+                    items: 3
+                },
+                1250: {
+                    items: 4
+                }
+            }
+        });
+        $('#myint2').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            touchDrag: false,
+            mouseDrag: false,
+            rtl:direc,
+            navText:['<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-l.gif">','<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-r.gif">'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    touchDrag: true,
+                },
+                500: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                880: {
+                    items: 3
+                },
+                999: {
+                    items: 3
+                },
+                1250: {
+                    items: 3
+                }
+            }
+        });
+        $('#myint3').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            touchDrag: false,
+            mouseDrag: false,
+            rtl:direc,
+            navText:['<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-l.gif">','<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-r.gif">'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    touchDrag: true,
+                },
+                500: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                880: {
+                    items: 2
+                },
+                999: {
+                    items: 2
+                },
+                1250: {
+                    items: 2
+                }
+            }
+        });
+
+        $('.slider-projects').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:true,
+            lazyLoad:true,
+            rtl:direc,
+            autoplay:false,
+            autoplayTimeout:5000,
+            smartSpeed: 1500,
+            navText:['<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-r.gif">','<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-l.gif">'],
+            dots:false,
+            responsive:{
+                0:{
+                    items:1,
+                    stagePadding: 20,
+                },
+                400:{
+                    items:1,
+                    stagePadding: 70,
+                },
+                575:{
+                    items:2,
+                },
+                640:{
+                    items:2
+                },
+                820:{
+                    items:3
+                },
+                992:{
+                    items:3
+                },          
+                1010:{
+                    items:4
+                },          
+                1200:{
+                    items:4
+                },          
+                1330:{
+                    items:5
+                }
+            }
+        });  
+              
+        jQuery(document).ready(function () {
+            var m =
+                '<a class="lang" href=" #">En </a>';
+            jQuery(".nav-lang").append(m);
+        });
+        $('.slider-chances').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            lazyLoad:true,
+            rtl:direc,
+            autoplay:false,
+            autoplayTimeout:5000,
+            smartSpeed: 1500,
+            //navText:['<img src="/images/nav-r.gif">','<img src="/images/nav-l.gif">'],
+            dots:false,
+            responsive:{
+                0:{
+                    items:1,
+                    stagePadding: 20,
+                },
+                400:{
+                    items:1,
+                    stagePadding: 50,
+                },
+                640:{
+                    items:2,
+                    stagePadding: 50,
+                },
+                820:{
+                    items:3,
+                    stagePadding: 50,
+                },
+                992:{
+                    items:3,
+                    stagePadding: 50,
+                },          
+                1010:{
+                    items:4,
+                },          
+                1200:{
+                    items:4
+                },          
+                1330:{
+                    items:4
+                }
+            }
+        });        
+        $('.slider-gov').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:true,
+            lazyLoad:true,
+            rtl:direc,
+            autoplay:true,
+            autoplayTimeout:5000,
+            smartSpeed: 1500,
+            navText:['<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-l.gif">','<img src="https://www.asda.gov.sa/wp-content/themes/aseer/images/nav-r.gif">'],
+            dots:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                400:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                786:{
+                    items:4
+                },
+                992:{
+                    items:5
+                },          
+                1000:{
+                    items:6
+                }
+            }
+        });
+
+        $(".search").click(function(){
+            $('.form-search').addClass("show");
+            return false;
+        });
+        $(".btn-x").click(function(){
+            $('.form-search').removeClass("show");
+            return false;
+        });
+
+
+        $("#myTab_projects .item a").click(function () {
+            var id = $(this).attr('href');
+            $(".owl-carousel .item").children().removeClass('active');
+            $(this).children().addClass('active');
+        });
+
+
+        $(".initiative .nav-tabs .item a").click(function () {
+            var id = $(this).attr('href');
+            $(".owl-carousel .item").children().removeClass('active');
+            $(this).children().addClass('active');
+        });
+        
+        $('body').on('change','.my-file',function(e){
+          
+          $(this).parent().find('.file_name').html(e.target.files[0].name);
+        })
+
+    }); // document ready
+
+</script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
